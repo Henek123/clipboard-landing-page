@@ -44,7 +44,7 @@ body{
     line-height: 1.5em;
     padding:0 2em;
 }
-#download-btns{
+.download-btns{
     margin-top: 3em;
     width: 100%;
     display: flex;
@@ -53,7 +53,7 @@ body{
     margin-bottom: 1em;
     text-align: center;
 }
-#download-btns div{
+.download-btns div{
     width: 220px;
     height: 3em;
     padding-top: 1em;
@@ -61,15 +61,15 @@ body{
     color: white;
     font-size: 18px;
 }
-#download-btns div:hover{
+.download-btns div:hover{
     cursor: pointer;
 }
-#download-ios{
+.download-ios{
     background-color: var(--strong-cyan);
     margin-right: 40px;
     box-shadow: 0px 3px 10px var(--strong-cyan);
 }
-#download-mac{
+.download-mac{
     background-color: var(--light-blue);
     box-shadow: 0px 3px 10px var(--light-blue);
 }
@@ -197,11 +197,11 @@ footer{
     .title{
         min-width: unset;
     }
-    #download-btns{
+    .download-btns{
         flex-direction: column;
         align-items: center;
     }
-    #download-ios{
+    .download-ios{
         margin: unset;
         margin-bottom: 20px;
     }
