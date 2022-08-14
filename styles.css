@@ -12,10 +12,11 @@
 #heading{
     text-align: center;
     background-image: url("images/bg-header-desktop.png");
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 10em;
 }
 body{
     font-family: serif;
@@ -35,20 +36,21 @@ body{
     font-weight: 400;
     font-size: 54px;
     color: var(--dark-grayish-blue);
-    padding-bottom: 0.8em;
+    padding: 0 1em 0.8em 1em;
 }
 .title p{
     font-size: 20px;
     color: var(--grayish-blue);
     line-height: 1.5em;
+    padding:0 2em;
 }
 #download-btns{
-    padding-top: 3em;
+    margin-top: 3em;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-bottom: 1em;
+    margin-bottom: 1em;
     text-align: center;
 }
 #download-btns div{
@@ -180,7 +182,6 @@ footer{
     width: 30%;
     color: var(--dark-grayish-blue);
     font-size: 18px;
-    background-color: red;
     margin: 5px;
 }
 #social-media{
@@ -191,4 +192,72 @@ footer{
 }
 #social-media img{
     height: 20px;
+}
+@media (max-width: 800px){
+    .title{
+        min-width: unset;
+    }
+    #download-btns{
+        flex-direction: column;
+        align-items: center;
+    }
+    #download-ios{
+        margin: unset;
+        margin-bottom: 20px;
+    }
+    #snippets-container{
+        flex-direction: column;
+    }
+    #mac-container{
+        position: unset;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #snippets-desc{
+        margin-top: 3em;
+        position: unset;
+        text-align: center;
+        padding: unset;
+        width: 100%;
+        max-width: unset;
+    }
+    #snippets-desc div{
+        width: 60%;
+        margin: 0 auto;
+    }
+    #features{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    #features div{
+        margin: unset;
+        width: 80%;
+        max-width: 350px;
+    }
+    #logos img:not(:last-of-type){
+        margin-bottom: 30px;
+        width: 60%;
+        max-width: 200px;
+    }
+    #footer-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-container > img{
+        padding-top: 20px;
+        height: 100px;
+    }
+    #links p{
+        width: 100%;
+        text-align: center;
+    }
+    #social-media{
+        width: 100%;
+        justify-content: space-around;
+    }
+    #social-media img{
+        height: 40px;
+    }
 }
